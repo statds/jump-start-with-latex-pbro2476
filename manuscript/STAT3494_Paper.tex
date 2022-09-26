@@ -53,9 +53,10 @@
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{amsthm}
+\usepackage{lipsum}
 \usepackage{graphicx}
 \usepackage[margin=1in]{geometry}
-\usepackage{hyperref}
+\usepackage[colorlinks=true]{hyperref}
 \hypersetup{colorlinks = true, linkcolor = blue, citecolor=blue, urlcolor = blue}
 \usepackage{natbib}
 \usepackage{enumitem}
@@ -87,29 +88,19 @@
 \title{STAT 3494W Paper}
 \author{Patrick Brogan\\[1ex]
   Department of Statistics, University of Connecticut\\}
-\date{August 2022}
+\date{September 2022}
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-One-paragraph summary of the entire study – typically no more than
-250 words in length (and in many cases it is well shorter than that),
-the Abstract provides an overview of the study.
+\lipsum[3]
 \end{abstract}
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
-What is the topic and why is it worth studying? – the first major
-section of text in the paper, the Introduction commonly describes
-the topic under investigation, summarizes or discusses relevant
-prior research (for related details, please see the Writing Literature
-Reviews section of this website), identifies unresolved issues that
-the current research will address, and provides an overview of the
-research that is to be described in greater detail in the sections to
-follow.
-
+Here is a link to \href{http://www.overleaf.com}{Overleaf}. \lipsum[5]
 \section*{Methods}
 \addcontentsline{toc}{section}{Methods}
 What did you do? – a section which details how the research was
@@ -119,17 +110,17 @@ used, and the study procedure.  If there were multiple experiments,
 then each experiment may require a separate Methods section.  A rule
 of thumb is that the Methods section should be sufficiently detailed
 for another researcher to duplicate your research. Inline equations should look like \(e^{i\theta} = \cos(\theta) + i\sin\theta\). Use displaystyle equations like so \begin{equation}
-  \label{eq:ks_standard}
-  f(y) = \frac{1}{\Gamma(\alpha)\beta^\alpha}\*y^{\alpha-1}e^{-\frac{y}{\beta}}, y > 0
+  f(y) = \frac{1}{\Gamma(\alpha)\beta^\alpha}\*y^{\alpha-1}e^{-\frac{y}{\beta}}, y > 0,
 \end{equation}
+Equations without numbers should look like this
+\[
+  E[Y] = \int_{-\infty}^{\infty} yf(y) \,dy,
+\]
+
 
 \section*{Results}
 \addcontentsline{toc}{section}{Results}
-What did you find? – a section which describes the data that was
-collected and the results of any statistical tests that were performed.
-It may also be prefaced by a description of the analysis procedure that
-was used. If there were multiple experiments, then each experiment may
-require a separate Results section.
+\lipsum[6]
 
 \begin{center}
 \begin{tabular}{||c c c c||}
@@ -155,32 +146,19 @@ require a separate Results section.
   \label{fig:Random Variable Table}
 \end{figure}
 
-\includegraphics[scale=0.3]{GammaHist}
+\includegraphics[scale=0.7]{GammaHist.pdf}
 
 \begin{figure}[h]
   \centering
-  \caption{Histogram of randomly generated numbers from a gamma probability distributions}
+  \caption{Histogram of randomly generated numbers from a gamma probability distribution}
   \label{fig:Random Gamma Histogram}
 \end{figure}
 
 \section*{Discussion}
-What is the significance of your results? – the final major section of
-text in the paper.  The Discussion commonly features a summary of the
-results that were obtained in the study, describes how those results
-address the topic under investigation and/or the issues that the research
-was designed to address, and may expand upon the implications of those
-findings.  Limitations and directions for future research are also commonly
-addressed.
-
-\newpage
+\lipsum[-1]
 
 \section*{References}
-List of articles and any books cited – an alphabetized list of the
-sources that are cited in the paper (by last name of the first author of
-each source).  Each reference should follow specific APA guidelines
-regarding author names, dates, article titles, journal titles, journal
-volume numbers, page numbers, book publishers, publisher locations,
-websites, and so on (for more information, please see the Citing References
-in APA Style page of this website).
+\lipsum[7]
 
 \end{document}
+
