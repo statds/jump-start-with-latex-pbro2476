@@ -53,8 +53,8 @@
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{amsthm}
-\usepackage{lipsum}
 \usepackage{graphicx}
+\usepackage{lipsum}
 \usepackage[margin=1in]{geometry}
 \usepackage[colorlinks=true]{hyperref}
 \hypersetup{colorlinks = true, linkcolor = blue, citecolor=blue, urlcolor = blue}
@@ -95,21 +95,15 @@
 \maketitle
 
 \begin{abstract}
-\lipsum[3]
+\lipsum[1-2]
 \end{abstract}
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
-Here is a link to \href{http://www.overleaf.com}{Overleaf}. \lipsum[5]
+Here is a link to \href{http://www.overleaf.com}{Overleaf}. \lipsum[2-4]
 \section*{Methods}
 \addcontentsline{toc}{section}{Methods}
-What did you do? – a section which details how the research was
-performed.  It typically features a description of the participants/
-subjects that were involved, the study design, the materials that were
-used, and the study procedure.  If there were multiple experiments,
-then each experiment may require a separate Methods section.  A rule
-of thumb is that the Methods section should be sufficiently detailed
-for another researcher to duplicate your research. Inline equations should look like \(e^{i\theta} = \cos(\theta) + i\sin\theta\). Use displaystyle equations like so \begin{equation}
+\lipsum[4-6] Inline equations should look like \(e^{i\theta} = \cos(\theta) + i\sin\theta\). Use displaystyle equations like so \begin{equation}
   f(y) = \frac{1}{\Gamma(\alpha)\beta^\alpha}\*y^{\alpha-1}e^{-\frac{y}{\beta}}, y > 0,
 \end{equation}
 Equations without numbers should look like this
@@ -120,25 +114,24 @@ Equations without numbers should look like this
 
 \section*{Results}
 \addcontentsline{toc}{section}{Results}
-\lipsum[6]
+\lipsum[6-8]
 
-\begin{center}
-\begin{tabular}{||c c c c||}
- \hline
- Uniform & Exponential & Normal & Gamma \\ [0.5ex]
- \hline\hline
+\begin{table}[tbp]
+  \caption{This is my first table.}
+  \label{tab:rv}
+\centering
+\begin{tabular}{rrrr}
+ \toprule
+ Uniform & Exponential & Normal & Gamma \\
+ \midrule
  0.3752854 & 0.8941359 & 1.0891278 & 1.8365839 \\
- \hline
  0.3429779 & 1.5657469 & 0.6783542 & 0.2391189 \\
- \hline
  0.5412031 & 2.0190394 & -0.2033725 & 1.0632763 \\
- \hline
  0.0224390 & 1.2995342 & 0.2241231 & 0.2357952 \\
- \hline
- 0.4368829 & 0.2267861 & -0.3625344 & 3.3227355 \\ [1ex]
- \hline
+ 0.4368829 & 0.2267861 & -0.3625344 & 3.3227355 \\
+ \bottomrule
 \end{tabular}
-\end{center}
+\end{table}
 
 \begin{figure}[h]
   \centering
@@ -155,10 +148,8 @@ Equations without numbers should look like this
 \end{figure}
 
 \section*{Discussion}
-\lipsum[-1]
-
-\section*{References}
-\lipsum[7]
+\lipsum[8-10]
 
 \end{document}
+
 
